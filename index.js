@@ -14,6 +14,7 @@ const notFound = fs.readFileSync(path.join(__dirname, '/template/404.html'), 'ut
 const cardSolo = fs.readFileSync(path.join(__dirname, '/template/cardSolo.html'), 'utf-8')
 const favicon = fs.readFileSync(path.join(__dirname, '/favicon.ico'))
 
+const port = process.env.PORT || 5000;
 
 const server = http.createServer((req, res) => {
     const { query, pathname } = url.parse(req.url, true);
@@ -68,8 +69,8 @@ const server = http.createServer((req, res) => {
 })
 
 
-server.listen(5000, '127.0.0.1', () => {
-    console.log('listening on 127.0.0.1 at port 5000');
+server.listen(port, () => {
+    console.log(`listening on port ${port}`);
 })
 
 
