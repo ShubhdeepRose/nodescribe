@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>NodeJS</title>
+</head>
+
+<body class="min-h-screen bg-gray-50">
+    <header class="bg-gray-700 fixed top-0 left-0 w-full">
+        <nav class="flex items-center justify-between md:px-14 px-5 py-4">
+            <a href="#" class="text-2xl font-semibold text-white">Shubh<span
+                    class="font-semibold text-yellow-400">deep</span></a>
+            <a href="#" class="rounded text-white font-semibold bg-yellow-400 px-3 py-2">LOGIN</a>
+        </nav>
+    </header>
+
+    <section class="bg-gray-700">
+        <div class="w-full h-72 flex items-center place-content-center flex-col gap-2">
+            <h2 class="text-white md:text-5xl text-3xl font-bold">The Shubhdeep Blog</h2>
+            <p class="text-white font-normal text-lg">Live Your Dream Now</p>
+        </div>
+    </section>
+    <div class="sm:p-10 p-5 lg:px-10">
+        <div
+            class="mx-auto place-content-center justify-center justify-items-center grid md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-7">
+            {%CARDS%}
+        </div>
+    </div>
+</body>
+
+</html>

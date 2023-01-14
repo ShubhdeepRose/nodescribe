@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build:tailwind": "tailwindcss-cli -i ./style.css -o ./css/style.css --watch",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "tailwindcss": "^3.2.4",
+    "tailwindcss-cli": "^0.1.2"
+  }
+}
